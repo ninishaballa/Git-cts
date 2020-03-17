@@ -1,0 +1,56 @@
+
+
+body{
+    #hd{
+        border-bottom: 1px solid darkgray;
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+
+    .container {
+        position: relative;
+        font-family: Arial;
+      }
+
+    .button {
+        position: absolute;
+        left: 15px;
+        margin-top: 103px;
+        text-align: center;
+        background-color:rgba(41, 46, 41, 0.5);
+        border-color: transparent;
+        color: white;  
+    }
+    #customfile{
+        width: 228px;
+        height: 26px;
+    }
+
+    li{
+        list-style-type: none;
+    }
+    img{
+        width: 70%;
+    }
+
+    #para{
+        color: rgb(73, 73, 255);
+    }
+
+    #ep{
+        border-radius: 10px;
+        margin-left: 550px;
+    }
+    
+    #ran{
+        color: rgb(119, 117, 117);
+    }
+
+    #list1{
+        padding-top: 70px;
+    }
+    #list2{
+        padding-left: 300px;
+        color:  rgb(73, 73, 255);
+    }
+}

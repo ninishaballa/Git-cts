@@ -1,0 +1,48 @@
+body #sha {
+  width: 20cm;
+  border: 1px solid black;
+}
+
+body img {
+  height: 50px;
+  width: 50px;
+  padding-bottom: 10px;
+}
+
+body .lead {
+  padding-left: 54px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+body #pomo {
+  background-color: white;
+}
+
+body a {
+  color: green;
+}
+
+body #para {
+  text-align: center;
+}
+
+body div {
+  padding: 10px;
+}
+
+body #bor {
+  padding-bottom: 15px;
+  border-top: 3px solid lightgray;
+}
+
+body #two {
+  padding-top: 200px;
+  padding-left: 70px;
+}
+
+body #three {
+  padding-top: 200px;
+  padding-left: 20px;
+}
+/*# sourceMappingURL=pomo.css.map */

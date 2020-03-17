@@ -1,0 +1,67 @@
+
+@import "base";
+
+$text-color: red; /* $ followed by wat u want*/
+$text-size: 37px;
+
+h1{
+    color: $text-color;
+    font-size: $text-size;
+}
+
+// Nested selectors
+
+  $colors:(
+      petal: #f98866,
+      poppy: #ff420e,
+      stem: #80bd9e,
+      spring-green:#89da59
+  );
+
+  @mixin text-prop {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-style: bold;
+    }
+
+  //@function (Directive)
+  @function applyColor($color-name){
+      @return map-get($colors, $color-name)
+  }
+
+  .basic-btn{
+      background-color: rgb(89, 112, 27);
+      color: #ec7a7a;
+      width: 100%;
+}
+
+.btn{
+    @extend .basic-btn;
+    padding: 20px;
+}
+
+body{ 
+    background-color:black;
+
+#p2{
+    color: map-get($colors, stem);
+}
+#p1{
+    @include text-prop;
+    color: blue;
+}
+
+#poly{
+    width: 600px;
+    height: 600px;
+    clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+    background-color: white;
+}
+.para{
+    @include text-prop;
+    color: applyColor(spring-green);
+  }
+
+}
+
+  

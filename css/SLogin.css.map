@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEC,IAFG,CAEH,IAAI,CAAA;EAED,aAAa,EAAE,KAAK;CACtB",
+    "sources": [
+        "SLogin.scss"
+    ],
+    "names": [],
+    "file": "SLogin.css"
+}

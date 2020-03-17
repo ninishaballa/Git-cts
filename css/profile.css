@@ -1,0 +1,56 @@
+body #hd {
+  border-bottom: 1px solid darkgray;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+body .container {
+  position: relative;
+  font-family: Arial;
+}
+
+body .button {
+  position: absolute;
+  left: 15px;
+  margin-top: 103px;
+  text-align: center;
+  background-color: rgba(41, 46, 41, 0.5);
+  border-color: transparent;
+  color: white;
+}
+
+body #customfile {
+  width: 228px;
+  height: 26px;
+}
+
+body li {
+  list-style-type: none;
+}
+
+body img {
+  width: 70%;
+}
+
+body #para {
+  color: #4949ff;
+}
+
+body #ep {
+  border-radius: 10px;
+  margin-left: 550px;
+}
+
+body #ran {
+  color: #777575;
+}
+
+body #list1 {
+  padding-top: 70px;
+}
+
+body #list2 {
+  padding-left: 300px;
+  color: #4949ff;
+}
+/*# sourceMappingURL=profile.css.map */

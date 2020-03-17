@@ -1,0 +1,24 @@
+body nav {
+  background-color: gray;
+}
+
+body a:hover {
+  background-color: darkgrey;
+  color: white;
+}
+
+body #jumbo {
+  background-image: url("C:\\Users\\Lenovo\\Desktop\\vs\\Bootstrap\\images\\jumbo.jpg");
+  text-align: center;
+}
+
+body .card-deck {
+  width: 60%;
+  padding: 40px;
+  text-align: center;
+}
+
+body a {
+  color: white;
+}
+/*# sourceMappingURL=page.css.map */

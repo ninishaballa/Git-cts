@@ -1,0 +1,28 @@
+body .col-md-3 {
+  background-color: #85e4cc;
+}
+
+body ul {
+  color: #014e01;
+}
+
+body li {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+
+body #ca {
+  margin-bottom: 10px;
+}
+
+body img {
+  width: 251px;
+  height: 201px;
+}
+
+body hr {
+  border-width: 3px;
+  border-color: darkgrey;
+}
+/*# sourceMappingURL=app.css.map */

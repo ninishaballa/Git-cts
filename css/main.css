@@ -1,0 +1,46 @@
+/* $ followed by wat u want*/
+h1 {
+  color: red;
+  font-size: 37px;
+}
+
+.basic-btn, .btn {
+  background-color: #59701b;
+  color: #ec7a7a;
+  width: 100%;
+}
+
+.btn {
+  padding: 20px;
+}
+
+body {
+  background-color: black;
+}
+
+body #p2 {
+  color: #80bd9e;
+}
+
+body #p1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  font-style: bold;
+  color: blue;
+}
+
+body #poly {
+  width: 600px;
+  height: 600px;
+  -webkit-clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+          clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+  background-color: white;
+}
+
+body .para {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  font-style: bold;
+  color: #89da59;
+}
+/*# sourceMappingURL=main.css.map */
