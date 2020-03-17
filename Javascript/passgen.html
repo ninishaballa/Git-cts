@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generation</title>
+</head>
+
+<body>
+
+    <input type="text" id="pass" placeholder="Ramdom pass. generation">
+    <button type="button" id="gp" onsubmit="generatePassword() "> Generate Password</button>
+
+    <script type="text/javascript">
+
+        function generatePassword() {
+            var length = 8,
+                charset = "!@#$%&abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            retVal = "";
+            for (var i = 0, n = charset.length; i < length; ++i) {
+                //Math.floor takes the round off value of the output obtained
+                retVal += charset.charAt(Math.floor(Math.random() * n));
+            }
+            return retVal;
+        }
+        document.getElementById("gp").addEventListener("click", function () {
+            random_password = generatePassword();
+            document.getElementById("pass").value = random_password;
+        });
+
+    </script>
+
+</body>
+
+</html>

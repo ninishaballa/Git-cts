@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <style>
+         .container{
+             background-color: lightsalmon;
+             padding-left: 30px;
+             padding-right: 30px;
+             width: 50%;
+         }
+         .jumbotron{
+             background-color: snow;
+             box-sizing: border-box;
+
+         }
+     </style>
+     </head>
+  <body>
+    <div class="jumbotron">
+        <div class="container">
+         <h2>Convert Currency</h2>
+         <form class="form-inline">
+           <div class="form-group mb-2">
+              <input type="number" class="form-control" id="amount"/>
+           </div>
+           <div class="form-group mx-sm-3 mb-2">
+              <select class="form-control" id="currency-1" required>
+                <option>INR</option>
+                <option>USD</option>
+                <option>CAD</option>
+                <option>JPY</option>
+              </select>
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+              <label>convert to</label>
+              <select class="form-control" id="currency-2" required>
+                <option>INR</option>
+                <option>USD</option>
+                <option>CAD</option>
+                <option>JPY</option>
+              </select>
+            </div>  
+            <button class="btn calculate-btn btn-primary mb-2">Convert</button>
+          </form>
+          <div class="result">
+            <p>
+              <span class="given-amount"></span> 
+              <span class="base-currency"></span>
+              <span class="final-result"></span> 
+              <span class="second-currency"></span>
+            </p>
+          </div>
+        </div> 
+      </div>
+      
+  </body>
+  <script>
+      var crrncy = {USD: {CAD:1.3443563815, INR:72.228295527, JPY:108.7364489387},
+INR: {CAD:0.0186126001, JPY:1.5054550041, USD:0.0138449896},
+CAD: {CAD:1.0, INR:53.7270447923, USD:0.7438503761},
+JPY: {CAD:0.0123634383, INR:0.6642510054, USD:0.0091965483}
+  }
+var btn = document.querySelector('.calculate-btn');
+var baseCurrencyInput = document.getElementById('currency-1');
+var secondCurrencyInput = document.getElementById('currency-2');
+var amountInput = document.getElementById('amount');
+var toShowAmount = document.querySelector('.given-amount');
+var toShowBase = document.querySelector('.base-currency');
+var toShowSecond = document.querySelector('.second-currency');
+var toShowResult = document.querySelector('.final-result');
+
+function convertCurrency(event) {
+  event.preventDefault();
+  var amount = amountInput.value;
+  var from = baseCurrencyInput.value;
+  var to = secondCurrencyInput.value;
+  var result = 0;
+  
+  try{
+    if (from == to){
+      result = amount;
+    } else {
+     result = amount * crrncy[from][to];
+  }
+  }
+  catch(err) {
+    result = amount * (1 / crrncy[to][from]);
+  }
+  
+  toShowAmount.innerHTML = amount;
+  toShowBase.textContent = from + ' = ';
+  toShowSecond.textContent = to;
+  toShowResult.textContent = result; 
+}
+
+btn.addEventListener('click', convertCurrency);
+
+
+  

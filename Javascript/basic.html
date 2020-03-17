@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+</head>
+
+<body>
+
+    <!--inline js-->
+    <button onclick="display()">Click Me</button>
+    <button oncontextmenu="alert('Right clicked')">Context menu</button>
+    <!--when mouse right clicked then alert will come-->
+
+    <button onmouseover="alert('Mouse over')">Mouse over</button>
+    <!--when mouse is hovered on the button then alert will come-->
+
+    <button onmouseout="alert('Mouse out')">Mouse out</button><br><br>
+    <!--when we hover away from the button then alert will come-->
+
+    <!--keyboard events-->
+
+    <input type="text" onkeydown="alert('key down')" />
+    <!--as soon as u click any key alert will come before relesing the key and later will display what we typed-->
+    <input type="text" onkeyup="alert('key up')" />
+    <!--alert will come after relesing the key and after what we typed-->
+    <input type="text" onkeypress="alert('key press')" />
+    <!--when ctrl,shift,alt,esc,arrow keys used this will not work-->
+
+    <p id="p1">Paragraph</p>
+
+    <!--embedded-->
+    <!--<script>
+        var a = 10;
+        console.log(a);
+        document.write("hello");
+    </script>-->
+
+    <!--external-->
+    <!--<script src="C:\Users\Lenovo\Desktop\vs\Javascript\basic.html"></script>-->
+    <script src="basics.js"></script>
+
+</body>
+
+</html>

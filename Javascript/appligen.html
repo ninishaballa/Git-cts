@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Id Generation</title>
+</head>
+
+<body>
+
+    <input type="text" id="appli" placeholder="Random App. Id generation">
+    <button type="button" id="ga" onsubmit="generateAppli() ">Generate</button>
+
+    <script type="text/javascript">
+
+        function generateAppli() {
+            var length = 8,
+                charset = "1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            retVal = "";
+            for (var i = 0, n = charset.length; i < length; ++i) {
+                //Math.floor takes the round off value of the output obtained
+                retVal += charset.charAt(Math.floor(Math.random() * n));
+            }
+            return retVal;
+        }
+        document.getElementById("ga").addEventListener("click", function () {
+            random_appli = generateAppli();
+            document.getElementById("appli").value = random_appli;
+        });
+
+    </script>
+
+
+</body>
+
+</html>
