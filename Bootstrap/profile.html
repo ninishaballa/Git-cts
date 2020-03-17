@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile page</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="C:\Users\Lenovo\Desktop\vs\css\profile.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h6 id="hd">Profile page :</h6>
+
+        <div class="row">
+            <div class="col-md-4">
+
+                <img src="images/a.jpg" alt="profile pic">
+                <button class="button"><input type="file" class="custom-file-input" id="customfile" name="filename">
+                    <center>change Photo</center>
+                </button>
+
+                <p>
+                    <li style="color: darkgrey;">WORK LINK</li><br>
+                    <li style="font-size: 15px;">Website Link</li>
+                    <li style="font-size: 15px;">bootsnip Profile</li>
+                    <li style="font-size: 15px;">Bootply Profile</li><br>
+
+                    <li style="color: darkgrey;">SKILLS</li><br>
+                    <li style="font-size: 15px;">Web Designer</li>
+                    <li style="font-size: 15px;">Web Developer</li>
+                    <li style="font-size: 15px;">WordPress</li>
+                    <li style="font-size: 15px;">WooCommerce</li>
+                    <li style="font-size: 15px;">PHP, .Net</li>
+
+                </p>
+            </div>
+
+            <div class="col-md-8">
+                <h6>Kshiti Ghelani<button id="ep">Edit Profile</button></h6>
+                <p id="para">Web Developer and Designer</p>
+                <p id="ran">RANKINS:8/10</p>
+
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                            role="tab" aria-controls="nav-home" aria-selected="true">About</a>
+
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                            role="tab" aria-controls="nav-profile" aria-selected="false">Timeline</a>
+
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                        <span>
+                            <ul id="list1" style="list-style-type: none; display: inline-block;">
+                                <li style="padding-bottom: 10px;font-size: 15px;">User Id</li>
+                                <li style="padding-bottom: 10px;font-size: 15px;">Name</li>
+                                <li style="padding-bottom: 10px;font-size: 15px;">Email</li>
+                                <li style="padding-bottom: 10px;font-size: 15px;">Phone</li>
+                                <li style="padding-bottom: 10px;font-size: 15px;">Profession</li>
+                            </ul>
+
+                            <ul id="list2" style="list-style-type: none; display: inline-block;">
+                                <li style="padding-bottom: 10px;font-size: 15px;">Kshiti123</li>
+                                <li style="padding-bottom: 10px;font-size: 15px;">Kshiti Ghelani</li>
+                                <li style="padding-bottom: 10px;font-size: 15px;">kshitighelani@gmail.com</li>
+                                <li style="padding-bottom: 10px;font-size: 15px;">123 456 7890</li>
+                                <li style="padding-bottom: 10px;font-size: 15px;">Web Developer and Designer</li>
+                            </ul>
+                            <span>
+
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+                        <span>
+                            <ul id="list1" style="list-style-type: none; display: inline-block;">
+                                <li style="padding-bottom: 10px;font-size: 15px;">Experience</li>
+                                <li style="padding-bottom: 10px;font-size: 15px;">Hourley Rate</li>
+                                <li style="padding-bottom: 10px;font-size: 15px;">Total Projects</li>
+                                <li style="padding-bottom: 10px;font-size: 15px;">English Level</li>
+                                <li style="padding-bottom: 10px;font-size: 15px;">Availability</li>
+                                <li style="padding-bottom: 10px;font-size: 15px;">Your Bio</li>
+                                <li style="padding-bottom: 10px;color:rgb(73, 73, 255);font-size: 15px;">Your detailed
+                                    description</li>
+                            </ul>
+
+                            <ul id="list2" style="list-style-type: none; display: inline-block;">
+                                <li style="padding-bottom: 10px;font-size: 15px;">Expert</li>
+                                <li style="padding-bottom: 10px;font-size: 15px;">10$/hr</li>
+                                <li style="padding-bottom: 10px;font-size: 15px;">230</li>
+                                <li style="padding-bottom: 10px;font-size: 15px;">Expert</li>
+                                <li style="padding-bottom: 10px;font-size: 15px;">6 months</li>
+                                <li style="visibility: hidden;">none</li>
+                                <li style="visibility: hidden;">none</li>
+                            </ul>
+                            <span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

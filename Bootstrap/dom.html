@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+
+<body>
+
+    <form onsubmit="validate()">
+        <input type="text" id="username" placeholder="username">
+        <input type="password" id="password" placeholder="password">
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="p">Hello</p>
+    <button type="submit" id="btn">click</button>
+
+
+    <script>
+
+        function validate() {
+            //Defining empty obj
+            var userdetails = {};
+            //here keyuser and keypass 
+            var uname = document.querySelector("#username");
+            var pswd = document.querySelector("#password");
+
+            if (uname.value == "testuser" && pswd.value == "abc@123") {
+                alert("Successfully logged in")
+            }
+            else {
+                alert("Invalid credentials")
+            }
+            //To write the user details
+            userdetails["keyuser"] = uname;
+            userdetails["keypass"] = pswd;
+
+            //To read the user details
+            userdetails.keyuser
+            userdetails.keypass
+
+            return userdetails;
+
+        }
+
+    </script>
+</body>
+
+</html>
