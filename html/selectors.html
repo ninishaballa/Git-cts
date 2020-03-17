@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selectors</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" >  <!--external-->
+    
+   <style>    
+        p{    
+            color:green; font-family: 'Times New Roman', Times, serif;
+        }
+    </style> <!--above is embeded and 1st this will run followed by inline-->
+</head>
+
+<body>
+    <div>  <!--it is a container-->
+        <p style="color: fuchsia; font-size: x-large;">1st  paragraph</p>  <!--inline styling only affected to particular line-->
+    </div>
+    <div>
+        <p>2nd paragraph</p>
+    </div>
+
+        <p class="para" name="thridpara">3rd paragraph</p>
+    
+        <div>
+        <p id="fourth-para">4th paragraph</p>
+        <p>5th paragraph</p>   <!--4th abd 5th are siblings and will be affected to only 2nd para i.e 3th-->
+    </div>
+
+<style>
+    #fourth-para{
+        color: red
+    }
+    .para{
+        font-size: 24px;
+        color: indigo;    
+    }
+    p[name=thridpara]{
+        color: rgb(116, 44, 18);
+        font-size: xx-large;
+    }
+
+    p+p{
+        color: rgb(156, 156, 11);
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+    </style>
+</body>
+</html>

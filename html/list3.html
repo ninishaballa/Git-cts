@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>hover and list</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        ul {
+            width: 100px;
+            height: 100px;
+            list-style-type: none;
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+
+        .bordertop {
+            border-top: 2px solid green;
+        }
+
+        .borderbottom1 {
+            border-bottom: 2px solid red;
+        }
+
+        .borderbottom2 {
+            border-bottom: 2px solid green;
+        }
+
+        .borderright {
+            border-right: 2px solid green;
+
+        }
+
+        .borderleft {
+            border-left: 2px solid green;
+
+        }
+
+        li:hover {
+            background-color: rgb(242, 69, 248);
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        li {
+            padding: 7px;
+        }
+
+        /*li:nth-last-of-type(1) {
+            background-color: rgb(238, 132, 94);
+        }*/
+    </style>
+</head>
+
+<ul style="list-style-type: none;">
+    <li class="bordertop borderbottom1 borderright borderleft"><a href="www.home.html">Home</a></li>
+    <li class="borderbottom1 borderright borderleft"><a href="www.courses.html">Courses</a></li>
+    <li class="borderbottom1 borderright borderleft"><a href="www.login.html">Login</a></li>
+    <li class="borderbottom2 borderright borderleft"><a href="www.register.html">Register</a></li>
+</ul>
+
+<body>
+</body>
+
+</html>

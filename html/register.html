@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register page</title>
+    <!-- <style>
+            table{
+                border: 1px maroon solid;
+            }
+        </style>-->
+    <style>
+        table {
+            background-color: mediumturquoise;
+        }
+
+        input {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<center>
+    <table>
+
+        <tbody>
+            <p style="font-weight: initial; font-family:'Times New Roman', Times, serif; font-size: x-large;">
+                Registration page</p>
+
+            <form>
+
+                <tr>
+                    <td><label for=firstname>First name :</label></td>
+                    <td><input type="text" name="firstname" placeholder="Enter First name" pattern="[a-zA-Z]"
+                            title="Only aplhabets" required autofocus><br><br></td>
+                </tr>
+
+                <tr>
+                    <td><label for=lastname>Last name :</label></td>
+                    <td><input type="text" name="lastname" placeholder="Enter Last name" pattern="[a-zA-Z]"
+                            title="Only aplhabets" required><br><br></td>
+                </tr>
+
+                <tr>
+                    <td><label for=email>Email :</label></td>
+                    <td><input type="email" name="email" placeholder="Enter your email" pattern="[0-9 a-zA-Z @ .]"
+                            title="enter email properly" required><br><br></td>
+                </tr>
+
+                <tr>
+                    <td><label for=Contact>Contact number :</label></td>
+                    <td><input type="tel" name="Contact" placeholder="Enter your contact number" pattern="[0-9]{10}"
+                            title="Only 10 digits" required><br><br></td>
+                </tr>
+
+                <tr>
+                    <td><label for=gender>Male</label></td>
+                    <td><input type="radio" name="gender" checked></td>
+                </tr>
+
+                <tr>
+                    <td><label for=gender>Female</label></td>
+                    <td><input type="radio" name="gender"></td>
+                </tr>
+
+                <tr>
+                    <td><label for=gender>Other</label></td>
+                    <td><input type="radio" name="gender"><br><br></td>
+                </tr>
+
+                <tr>
+                    <td><label for=dob><abbr title="Date of birth">Dob :</abbr></label></td>
+                    <td><input type="date" name="dob"><br><br></td>
+                </tr>
+
+                <tr>
+                    <td><label for=add>Address :</label></td>
+                    <td><textarea rows="5" cols="20" name="addr" placeholder="Enter your permanent address"
+                            pattern="[0-9a-zA-Z - /]" title="enter address properly" required></textarea><br><br></td>
+                </tr>
+
+                <tr>
+                    <td><label for=username> Enter username :</label></td>
+                    <td><input type="text" name="username" placeholder="Enter username" pattern="[a-zA-Z]"
+                            title="Only alphabets" required><br><br></td>
+                </tr>
+
+                <tr>
+                    <td><label for=password>Enter password :</label></td>
+                    <td><input type="password" name="password" placeholder="Enter password"
+                            pattern="[0-9a-zA-Z @ # $ !]{8}" title="Only 8 characters" required><br><br></td>
+                </tr>
+
+                <tr>
+                    <td><label for=password>Re-enter password :</label></td>
+                    <td><input type="password" name="password" placeholder="Re-enter password"
+                            pattern="[0-9a-zA-Z @ # $ !]{8}" title="Only 8 characters" required><br><br></td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="terms" checked required></td>
+                    <td><label for=terms>I agree to the terms and conditions</label><br><br></td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="updates" checked></td>
+                    <td><label for=updates>Subscribe to get latest updates</label><br><br></td>
+                </tr>
+
+                <tr>
+                    <td><input type="submit" value="submit" required><br><br></td>
+                </tr>
+
+                <tr>
+                    <td>Click <a href="login.html"><em>here</em></a> to go back and login<br><br></td>
+                </tr>
+
+            </form>
+        </tbody>
+</center>
+</table>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <!--<style>
+        body{
+            border: 1px maroon solid;
+        }
+    </style>-->
+    <style>
+        table{
+            background-color: mediumturquoise;
+        }
+
+    </style>
+</head>
+
+<center>
+    <table>
+    
+         <tbody>
+        <td><p style="font-weight: initial; font-family:'Times New Roman', Times, serif; font-size: x-large;">Login page</p></td>
+
+    <form>
+        <tr>
+        <td><label  for=username>Username :</label></td>
+        <td><input type="text" name="username" placeholder="Enter user name" pattern="[a-zA-Z]" title="Only characters" required autofocus></td><br><br>
+        </tr>
+
+        <tr>
+        <td><label for=password>Password :</label></td>
+        <td><input type="password" name="password" placeholder="Enter password" pattern="[0-9a-zA-Z @ # $ !]{8}" title="Only 8 characters" required ></td><br><br>
+        </tr>
+
+        <tr>
+        <td><input type="submit" value="submit"></td><br><br>
+        </tr>
+        <!--<button>Submit</button>-->
+        <tr>
+        <td>Click <a href="register.html"><em>here</em></a> to register if you don't have account</td><br><br>
+        </tr>
+        <tr>
+        <td>Click <a href="reset.html"><em>here</em></a> to reset password if forgot</td>
+        </tr>
+        
+        <!--type=tel,radio,date,datetime,datetime-local
+        <textarea></textarea>,type-checkbox,back to login page-->
+    </form>
+</tbody>
+</center>
+</table>
+</html>

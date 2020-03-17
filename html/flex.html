@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        @media(min-width: 768px) {
+
+            /*for resizing on our wish*/
+            .container {
+                display: flex;
+            }
+        }
+
+        .container div {
+            border: 1px solid black;
+        }
+
+        .box1 {
+            flex: 5;
+            order: 2;
+        }
+
+        .box2 {
+            flex: 1;
+            order: 1;
+        }
+
+        .box3 {
+            flex: 1;
+            order: 4;
+            flex-grow: 3;
+        }
+
+        .box4 {
+            flex: 1;
+            order: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=container>
+        <div class=box1>
+            <p> BOX 1 The Bermuda Triangle, also
+                known as the Devil's Triangle or
+                Hurrican eAlley, is a loosely defined
+                region in the western part of the
+                North Atlantic Ocean where a number
+                of aircraft and ships are said to
+                have disappeared undermysterious
+                circumstances.</p>
+        </div>
+        <div class=box2>
+            <p> BOX 2 The Bermuda Triangle, also
+                known as the Devil's Triangle or
+                Hurrican eAlley, is a loosely defined
+                region in the western part of the
+                North Atlantic Ocean where a number
+                of aircraft and ships are said to
+                have disappeared undermysterious
+                circumstances.</p>
+        </div>
+        <div class=box3>
+            <p> BOX 3 The Bermuda Triangle, also
+                known as the Devil's Triangle or
+                Hurrican eAlley, is a loosely defined
+                region in the western part of the
+                North Atlantic Ocean where a number
+                of aircraft and ships are said to
+                have disappeared undermysterious
+                circumstances.</p>
+        </div>
+        <div class=box4>
+            <p> BOX 4 The Bermuda Triangle, also
+                known as the Devil's Triangle or
+                Hurrican eAlley, is a loosely defined
+                region in the western part of the
+                North Atlantic Ocean where a number
+                of aircraft and ships are said to
+                have disappeared undermysterious
+                circumstances.</p>
+        </div>
+    </div>
+</body>
+
+</html>

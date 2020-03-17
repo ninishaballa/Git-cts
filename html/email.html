@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Email</title>
+
+    <style>
+        table {
+            background-color: rgb(245, 210, 215);
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        input {
+            padding: 5px;
+        }
+
+        input:hover {
+            background-color: rgb(235, 121, 15);
+        }
+
+        body {
+            padding: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <table>
+            <tbody>
+                <form>
+
+                    <tr>
+                        <td><label for=email>Email *</label><br></td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" name="email" placeholder="Enter your email" pattern="[0-9 a-zA-Z @ .]"
+                                title="enter email properly" required><br></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for=password>Password *</label><br></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" name="password" placeholder="Enter password"
+                                pattern="[0-9a-zA-Z @ # $ !]{8}" title="Only 8 characters" required><br><br></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="submit" value="submit"
+                                style="padding-right: 65px; padding-left: 65px; background-color: rgb(90, 177, 128);"
+                                required><br></td>
+                    </tr>
+
+                </form>
+            </tbody>
+        </table>
+    </center>
+</body>
+
+</html>
